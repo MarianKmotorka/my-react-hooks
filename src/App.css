@@ -38,6 +38,7 @@
 .menu .item.active {
   background-color: rgb(75, 255, 195, 0.09);
   font-weight: 500;
+  outline: solid rgb(21, 255, 177);
 }
 
 .menu .item:hover {
