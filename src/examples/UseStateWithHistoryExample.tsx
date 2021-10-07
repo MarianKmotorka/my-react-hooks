@@ -6,7 +6,7 @@ const UseStateWithHistoryExample = () => {
   const [value, setValue, { history, cursor, goBack, goForward }] = useStateWithHistory(1)
 
   return (
-    <div className='App'>
+    <div>
       <p>
         History: {[...history].splice(0, cursor).join(' ')} <strong>{value}</strong>{' '}
         {[...history].splice(cursor + 1, history.length - 1).join(' ')}
@@ -19,6 +19,7 @@ const UseStateWithHistoryExample = () => {
       <button onClick={goBack}>GO BACK</button>
       <button onClick={goForward}>GO FORWARD</button>
 
+      <h2>Implementation</h2>
       <SyntaxHighlighter language='typescript' style={github}>
         {`import { useCallback, useRef, useState } from 'react'
 

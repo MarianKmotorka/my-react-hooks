@@ -1,3 +1,4 @@
+import UseTimeoutExample from './examples/UseTimeoutExample'
 import UseStateWithHistoryExample from './examples/UseStateWithHistoryExample'
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
 import './App.css'
@@ -13,12 +14,12 @@ function App() {
             useStateWithHistory
           </NavLink>
 
-          <NavLink className='item' to='/useToggle'>
-            useToggle
-          </NavLink>
-
           <NavLink className='item' to='/useTimeout'>
             useTimeout
+          </NavLink>
+
+          <NavLink className='item' to='/useToggle'>
+            useToggle
           </NavLink>
 
           <NavLink className='item' to='/useArray'>
@@ -30,7 +31,7 @@ function App() {
           <Switch>
             <Route path='/useStateWithHistory' component={() => <UseStateWithHistoryExample />} />
             <Route path='/useToggle' component={() => <p>Work in progress...</p>} />
-            <Route path='/useTimeout' component={() => <p>Work in progress...</p>} />
+            <Route path='/useTimeout' component={() => <UseTimeoutExample />} />
             <Route path='/useArray' component={() => <p>Work in progress...</p>} />
             <Redirect to='/useStateWithHistory' />
           </Switch>
