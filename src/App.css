@@ -5,8 +5,12 @@
 }
 
 .menu {
+  align-self: flex-start;
+  height: 100vh;
+  position: sticky;
+  top: 0;
   background-color: #ffffff;
-  width: 30vw;
+  width: 400px;
   box-shadow: 0 5px 20px rgba(0, 0, 10, 0.2);
   display: flex;
   flex-direction: column;
@@ -47,7 +51,7 @@
 
 .content {
   height: 100%;
-  padding: 30px 0 0 2vw;
+  padding: 30px 0 0 50px;
 }
 
 button {
@@ -59,7 +63,11 @@ button {
   color: #444;
   font-weight: 600;
   cursor: pointer;
+  transition: box-shadow 0.1s;
 }
 button:hover {
   outline: solid rgb(21, 255, 177);
+}
+button:active {
+  box-shadow: 0 0 0 3px rgb(21, 255, 177) inset;
 }
