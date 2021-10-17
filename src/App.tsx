@@ -1,7 +1,7 @@
 import UseTimeoutExample from './examples/UseTimeoutExample'
 import UseStateWithHistoryExample from './examples/UseStateWithHistoryExample'
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
-import './App.css'
+import './App.scss'
 import UseNextExample from './examples/UseNextExample'
 
 function App() {

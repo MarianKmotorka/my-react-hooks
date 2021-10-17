@@ -1,3 +1,5 @@
+@import './index.scss';
+
 .container {
   display: flex;
   background-color: #fafafa;
@@ -22,7 +24,7 @@
   align-self: stretch;
   font-size: 1.7rem;
   margin: 40px 0;
-  color: rgb(21, 255, 177);
+  color: $green;
 }
 
 .menu .item {
@@ -40,13 +42,13 @@
 }
 
 .menu .item.active {
-  background-color: rgb(75, 255, 195, 0.09);
+  background-color: $green-light;
   font-weight: 500;
-  outline: solid rgb(21, 255, 177);
+  outline: solid $green;
 }
 
 .menu .item:hover {
-  background-color: rgb(75, 255, 195, 0.09);
+  background-color: $green-light;
 }
 
 .content {
@@ -55,7 +57,7 @@
 }
 
 button {
-  background-color: rgb(75, 255, 195, 0.09);
+  background-color: $green-light;
   border: none;
   padding: 1rem;
   border-radius: 10px;
@@ -66,8 +68,8 @@ button {
   transition: box-shadow 0.1s;
 }
 button:hover {
-  outline: solid rgb(21, 255, 177);
+  outline: solid $green;
 }
 button:active {
-  box-shadow: 0 0 0 3px rgb(21, 255, 177) inset;
+  box-shadow: 0 0 0 3px $green inset;
 }
