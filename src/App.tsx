@@ -3,6 +3,7 @@ import UseStateWithHistoryExample from './examples/UseStateWithHistoryExample'
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
 import './App.scss'
 import UseNextExample from './examples/UseNextExample'
+import UseArrayExample from './examples/UseArrayExample'
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
             <Route path='/useStateWithHistory' component={() => <UseStateWithHistoryExample />} />
             <Route path='/useNext' component={() => <UseNextExample />} />
             <Route path='/useTimeout' component={() => <UseTimeoutExample />} />
-            <Route path='/useArray' component={() => <p>Work in progress...</p>} />
+            <Route path='/useArray' component={() => <UseArrayExample />} />
             <Redirect to='/useStateWithHistory' />
           </Switch>
         </div>
